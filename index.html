@@ -79,12 +79,18 @@
 <header>
   <div class="title-block">
     <h1>Are World Leaders Evil, Inept, Spineless or Principled?</h1>
-     <h3><i>A biased assessment of the what we've got</i></h3>
+     <h3><i>A biased assessment of what we've got</i></h3>
     <p>Quadrants are explicit character types: Evil, Spineless, Inept, and Principled. Click a point for a photo and full rationale.</p>
   </div>
   <button class="toggle-btn" onclick="toggleTheme()" id="theme-btn"><span id="theme-icon">☀️</span> Light mode</button>
 </header>
-<div id="chart-container"><div id="chart"></div></div><div style="padding:0 2rem 1.25rem;">
+<div id="chart-container"><div id="chart"></div></div><footer>
+  <span class="legend-item"><span class="dot" style="background:rgba(230,60,60,0.9);border-color:rgba(230,60,60,1)"></span> Evil</span>
+  <span class="legend-item"><span class="diamond" style="background:rgba(70,140,230,0.9);border-color:rgba(70,140,230,1)"></span> Spineless</span>
+  <span class="legend-item"><span class="square" style="background:rgba(220,160,70,0.9);border-color:rgba(220,160,70,1)"></span> Inept</span>
+  <span class="legend-item"><span class="square" style="background:rgba(90,185,95,0.9);border-color:rgba(90,185,95,1)"></span> Principled</span>
+  <span class="legend-item">Saturation = free agency; faded markers are structurally constrained</span>
+</footer><div style="padding:0 2rem 1.25rem;">
   <section style="max-width:980px;margin:0 auto;background:var(--color-surface);border:1px solid var(--color-border);border-radius:18px;padding:1rem 1.1rem;line-height:1.55;">
     <div style="font-size:.82rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--color-text-muted);margin-bottom:.55rem;">Methodology</div>
     <p style="margin-bottom:.7rem;"><strong>Three dimensions:</strong> intent (pattern of disregard for human life), capability (demonstrated expertise and competence), and agency (how constrained by forces outside their control).</p>
@@ -96,16 +102,10 @@
     <p style="margin-bottom:.7rem;">Ineptitude is rare by design. Systems cull it before people reach the top. When you see it, it's usually domain-specific. Evil dominates because the system rewards it.</p>
     <p style="margin-bottom:.7rem;">Leaders can occupy more than one category.</p>
     <p style="margin-bottom:.7rem;">The constraint dimension is encoded as colour saturation and separates won't from can't.</p>
-    <p>Full methodology: <span style="color:var(--color-text-muted)">[link tbd]</span></p>
+    <p>Full methodology: <a href="https://substack.com/@jeremycyrilwrites/note/p-193722451" style="color:var(--color-primary)">jeremycyrilwrites.substack.com</a></p>
   </section>
 </div>
-<footer>
-  <span class="legend-item"><span class="dot" style="background:rgba(230,60,60,0.9);border-color:rgba(230,60,60,1)"></span> Evil</span>
-  <span class="legend-item"><span class="diamond" style="background:rgba(70,140,230,0.9);border-color:rgba(70,140,230,1)"></span> Spineless</span>
-  <span class="legend-item"><span class="square" style="background:rgba(220,160,70,0.9);border-color:rgba(220,160,70,1)"></span> Inept</span>
-  <span class="legend-item"><span class="square" style="background:rgba(90,185,95,0.9);border-color:rgba(90,185,95,1)"></span> Principled</span>
-  <span class="legend-item">Saturation = free agency; faded markers are structurally constrained</span>
-</footer>
+
 <div class="modal-backdrop" id="modal-backdrop" aria-hidden="true">
   <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-name">
     <div class="modal-inner">
